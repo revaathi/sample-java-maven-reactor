@@ -1,7 +1,14 @@
 language: java
+build_image: drydock/u12javall:tip
 
 jdk:
    - oraclejdk8
+   - oraclejdk7
+   - openjdk7  
+   - openjdk6
+services:
+   - maven
+   
 
 script:
    - mvn clean cobertura:cobertura
