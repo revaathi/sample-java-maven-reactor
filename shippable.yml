@@ -13,3 +13,5 @@ services:
 script:
    - mvn clean cobertura:cobertura
    - mvn test
+   
+   
